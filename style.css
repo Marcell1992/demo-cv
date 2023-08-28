@@ -3,22 +3,99 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #1F2937;
     color: #E5E7EB;
+    padding-bottom: 30px;
+}
+
+.logo {
+    margin: 8px 0px;
+    padding-bottom: 36px;
+}
+
+.sub-recruit {
+    margin: 8px 0px;
+    font-size: 22px;
+    font-weight: 800;
+    max-width: 300px;
+}
+
+.sub-text {
+    margin: 8px 0px;
+}
+
+.contact {
+   border-radius: 6px; 
+   padding: 4px 32px;
+   background-color: rgb(24, 104, 223);
+   color: white;
+   font-weight: 600;
+}
+
+.pictures {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1F2937;
+    color: white;
+    padding-bottom: 30px;
 }
 
 .linkedin {
     background-color: white;
-    margin: 0 12px;
+    margin: 0px 12px;
 }
 
 .right-links {
     display: flex;
+    justify-content: flex-end;
+    margin: 8px 0px;
+}
+
+/*.profile-pic {
+    width: 300px;
+}*/
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+}
+
+.pr-header {
+    text-align: center;
+    margin: 32px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+img {
+    border-radius: 6px;
+}
+
+.project1-pic {
+    display: flex;
+    border: 2px solid blue;
+    border-radius: 8px;
+    width:fit-content;
+    height: 200px;
+}
+
+.project1-txt {
+    flex-wrap: wrap;
+    width: 230px;
+    padding-top: 4px;
 }
 
 .footer {
@@ -26,5 +103,6 @@ body {
     justify-content: center;
     background-color: #1F2937;
     color: #E5E7EB;
-    font-weight: bolder;
+    font-weight: 600;
+    padding: 16px 0px;
 }
