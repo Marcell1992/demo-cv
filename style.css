@@ -1,13 +1,14 @@
 body {
     display: flex;
     flex-direction: column;
+    width: auto;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    overflow:auto;
 }
 
 a {
     color: white;
-    text-decoration: none;
     font-weight: 400;
 }
 
@@ -19,29 +20,29 @@ a {
     justify-content: space-around;
     background-color: #1F2937;
     color: #E5E7EB;
-    padding-bottom: 30px;
+    padding-bottom: 1rem;
 }
 
 .logo {
     margin: 8px 0px;
-    padding-bottom: 36px;
+    padding-bottom: 1rem;
 }
 
 .sub-recruit {
     margin: 8px 0px;
-    font-size: 36px;
+    font-size: 1.5rem;
     font-weight: bolder;
-    width: 400px;
+    width: 50vw;
 }
 
 .sub-text {
     margin: 12px 0px;
-    width: 400px;
+    width: 50vw;
 }
 
 button {
    border-radius: 6px; 
-   padding: 4px 32px;
+   padding: 0.5rem 3rem;
    background-color: #3882F6;
    color: #F9FAF8;
    font-weight: 600;
@@ -67,7 +68,11 @@ button {
 
 .right-links {
     justify-content: flex-end;
-    margin: 8px 0px;
+    margin: 20px 0px;
+}
+
+.right-links img {
+    border-radius: 6px;
 }
 
 .portfolio {
@@ -75,10 +80,14 @@ button {
     padding-bottom: 32px;
 }
 
+.profile-pic {
+    height: 15rem;
+}
+
 .pr-header {
     text-align: center;
     margin: 32px;
-    font-size: 36px;
+    font-size: 2.2rem;
     font-weight: 800;
     color: #1F2937;
 }
@@ -90,42 +99,32 @@ button {
     padding: 0px 16px;
 }
 
-img {
-    border-radius: 6px;
-}
 
-.project1-pic {
+.project1-pic, .project2-pic {
     border: 2px solid blue;
     border-radius: 8px;
-    width:fit-content;
-    height: auto;
+    width: 14.5rem;
+    height: 15rem;
+    display: block;
+    transition: 0.15s;
 }
 
-.pic1:hover {
-    height: 600px;
-    width: 750px;
+.project1-pic:hover, .project2-pic:hover {
+    transform: scale(2.2);
+    transform-origin: top;
 }
 
 .project-txt {
     flex-wrap: wrap;
-    width: 230px;
+    width: 14.5rem;
     padding-top: 4px;
-}
-
-.project2-pic {
-    height: 180px;
-    border-radius: 8px;
-    border: 2px solid blue;
-    width: 200px;
-    justify-content: center;
-    align-items: center;
 }
 
 .inspiring {
     background-color: #E5E7EB;
-    padding: 32px 200px;
+    padding: 1.5rem 15vw;
     text-align: center;
-    font-size: 32px;
+    font-size: 1.5rem;
     font-weight: lighter;
 }
 
@@ -143,7 +142,7 @@ h6 {
     color: #E5E7EB;
     padding: 36px 24px;
     border-radius: 6px;
-    width: 600px;
+    width: 60vw;
 }
 
 .sn-header {
